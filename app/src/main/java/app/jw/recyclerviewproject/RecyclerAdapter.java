@@ -55,18 +55,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
             super(itemView);
 
             //view 호출(findViewById) 관련 처리
-            textName = itemView.findViewById(R.id.textName);
-            textCategory = itemView.findViewById(R.id.textCategory);
-            textDate = itemView.findViewById(R.id.textDate);
+
 
         }
 
         void onBind(Item item)
         {
             //기타 처리(특히 View를 건드리는 처리)는 모두 여기서
-            textName.setText(item.getProductName());
-            textCategory.setText(item.getProductCategory());
-            textDate.setText(item.getProductDate());
+
+
         }
     }
 }
